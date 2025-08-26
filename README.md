@@ -60,12 +60,17 @@ The Online Project Task Management System is a comprehensive web-based platform 
     -   Generate an application key: `php artisan key:generate`
     -   Update the database credentials in the `.env` file.
 
-5.  **Run database migrations and seeders:**
+5.  **Create the MySQL database:**
+    ```bash
+    mysql -u root -p -e "CREATE DATABASE tms;"
+    ```
+
+6.  **Run database migrations and seeders:**
     ```bash
     php artisan migrate --seed
     ```
 
-6.  **Start the local development server:**
+7.  **Start the local development server:**
     ```bash
     php artisan serve
     ```
