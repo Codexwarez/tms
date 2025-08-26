@@ -1,0 +1,2 @@
+// In app/Http/Kernel.php, add to $routeMiddleware:
+// 'role' => \App\Http\Middleware\EnsureRole::class,
