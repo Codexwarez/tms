@@ -1,6 +1,6 @@
 # Online Project Task Management System
 
-![Project Banner](https://placehold.co/1200x400/1e40af/ffffff?text=Online+Project+Task+Management+System)
+
 
 ## Overview
 
