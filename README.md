@@ -40,8 +40,8 @@ The Online Project Task Management System is a comprehensive web-based platform 
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/online-project-task-management-system.git](https://github.com/your-username/online-project-task-management-system.git)
-    cd online-project-task-management-system
+    git clone [https://github.com/Codexwarez/tms.git](https://github.com/Codexwarez/tms.git)
+    cd tms
     ```
 
 2.  **Install PHP dependencies:**
