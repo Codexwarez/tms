@@ -43,7 +43,7 @@ class StaffRequestController extends Controller
             $admin->notify(new StaffRequestSubmitted($staffRequest));
         }
 
-        return redirect()->route('staff.requests.index')->with('success', 'Request submitted.');
+        return redirect()->route('requests.index')->with('success', 'Request submitted.');
     }
 
     public function updateStatus(Request $request, StaffRequest $staffRequest)

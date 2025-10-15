@@ -23,7 +23,7 @@ class ProjectController extends Controller
     public function create()
     {
 
-        $users = \App\Models\User::where('role', 'staff')->get();
+        $users = User::where('role', 'staff')->get();
         return view('admin.projects.create', compact('users'));
     }
 
@@ -74,7 +74,7 @@ class ProjectController extends Controller
     public function edit(Project $project)
     {
 
-        $users = \App\Models\User::where('role', 'staff')->get();
+        $users = User::where('role', 'staff')->get();
         return view('admin.projects.edit', compact('project', 'users'));
     }
 
@@ -114,7 +114,7 @@ class ProjectController extends Controller
         $data = $request->validate(['status' => 'required|in:incomplete,in_progress,completed']);
         $project->update($data);
         // Notify admin
-        $adminUsers = \App\Models\User::where('role', 'admin')->get();
+        $adminUsers = User::where('role', 'admin')->get();
         foreach ($adminUsers as $admin) {
             $admin->notify(new ProjectStatusUpdated($project, auth()->user()));
         }
